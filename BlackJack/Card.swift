@@ -89,9 +89,9 @@ class Card {
                     print("test")
                     throw CardParseError.value }
             
-            if let convertCard = CardValue(rawValue: cardValue) {
-                let convertCardToInt = IntValue.convertCard.rawValue
-            }
+//            if let convertCard = CardValue(rawValue: cardValue) {
+//                let convertCardToInt = IntValue.convertCard.rawValue
+//            }
             
             let validCard = Card(image: imageURL, value: cardValue)
             return validCard
