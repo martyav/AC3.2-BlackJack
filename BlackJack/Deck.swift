@@ -34,7 +34,7 @@ class Deck {
       return validDeck
     }
     catch {
-      print("Cannot find deck")
+      print("error: \(error)")
     }
     return nil
   }

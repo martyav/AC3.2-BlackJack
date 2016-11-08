@@ -12,13 +12,25 @@ enum CardParseError: Error {
   case response, image, value
 }
 
-//enum CardValue: Int {
-//  case A:
-//  case 2,3,4,5,6,7,8,9,10
-//  case JACK: 11
-//  case QUEEN: 12
-//  case KING: 13
-//}
+enum CardValue: String {
+  case Ace = "ACE"
+  case Two = "2"
+  case Three = "3"
+  case Four = "4"
+  case Five = "5"
+  case Six = "6"
+  case Seven = "7"
+  case Eight = "8"
+  case Nine = "9"
+  case Ten = "10"
+  case Jack = "JACK"
+  case Queen = "QUEEN"
+  case King = "KING"
+}
+
+enum IntValue: Int {
+  case Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King
+}
 
 class Card {
   internal let image: String
@@ -44,7 +56,12 @@ class Card {
         cards.count > 0,
         let imageURL = cards[0]["image"] as? String,
         let cardValue = cards[0]["value"] as? String
-        else { return nil }
+        else {
+          print("test")
+          throw CardParseError.value }
+      
+      let convertCard = CardValue(rawValue: cardValue)
+      let convertCardToInt = IntValue.convertCard.rawValue
       
       let validCard = Card(image: imageURL, value: cardValue)
       return validCard

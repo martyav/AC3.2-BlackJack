@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		47DB30831DD11375004A570D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DB30821DD11375004A570D /* AppDelegate.swift */; };
-		47DB30881DD11375004A570D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DB30861DD11375004A570D /* Main.storyboard */; };
 		47DB308A1DD11375004A570D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47DB30891DD11375004A570D /* Assets.xcassets */; };
 		47DB308D1DD11375004A570D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DB308B1DD11375004A570D /* LaunchScreen.storyboard */; };
 		47DB30951DD1213A004A570D /* BlackJackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DB30941DD1213A004A570D /* BlackJackViewController.swift */; };
 		47DB30991DD12184004A570D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DB30981DD12184004A570D /* APIManager.swift */; };
 		47DB309C1DD121D1004A570D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DB309B1DD121D1004A570D /* Card.swift */; };
 		47DB309F1DD1331F004A570D /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DB309E1DD1331F004A570D /* Deck.swift */; };
+		47DB30A11DD26C15004A570D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DB30A01DD26C15004A570D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47DB307F1DD11375004A570D /* BlackJack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackJack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DB30821DD11375004A570D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47DB30871DD11375004A570D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47DB30891DD11375004A570D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47DB308C1DD11375004A570D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47DB308E1DD11375004A570D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		47DB30981DD12184004A570D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		47DB309B1DD121D1004A570D /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		47DB309E1DD1331F004A570D /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		47DB30A01DD26C15004A570D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				47DB30821DD11375004A570D /* AppDelegate.swift */,
-				47DB30861DD11375004A570D /* Main.storyboard */,
+				47DB30A01DD26C15004A570D /* Main.storyboard */,
 				47DB30891DD11375004A570D /* Assets.xcassets */,
 				47DB308B1DD11375004A570D /* LaunchScreen.storyboard */,
 				47DB308E1DD11375004A570D /* Info.plist */,
@@ -164,9 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47DB30A11DD26C15004A570D /* Main.storyboard in Resources */,
 				47DB308D1DD11375004A570D /* LaunchScreen.storyboard in Resources */,
 				47DB308A1DD11375004A570D /* Assets.xcassets in Resources */,
-				47DB30881DD11375004A570D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +188,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		47DB30861DD11375004A570D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				47DB30871DD11375004A570D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		47DB308B1DD11375004A570D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,6 +335,7 @@
 				47DB30931DD11375004A570D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
