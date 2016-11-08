@@ -63,9 +63,9 @@ enum CardValue: String {
 
 class Card {
     internal let image: String
-    internal let value: String
+    internal let value: Int
     
-    init(image: String, value: String) {
+    init(image: String, value: Int) {
         self.image = image
         self.value = value
     }
@@ -89,11 +89,10 @@ class Card {
                     print("test")
                     throw CardParseError.value }
             
-//            if let convertCard = CardValue(rawValue: cardValue) {
-//                let convertCardToInt = IntValue.convertCard.rawValue
-//            }
+            let convertCard = CardValue(rawValue: cardValue)
+            let intCard = convertCard?.intVal
             
-            let validCard = Card(image: imageURL, value: cardValue)
+            let validCard = Card(image: imageURL, value: intCard!)
             return validCard
         }
             
