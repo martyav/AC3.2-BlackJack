@@ -92,7 +92,6 @@ class Card {
             let convertCard = CardValue(rawValue: cardValue)
             let intCard = convertCard?.intVal
             
-            
             let validCard = Card(image: imageURL, value: intCard!)
             return validCard
         }
