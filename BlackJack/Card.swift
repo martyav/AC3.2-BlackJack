@@ -61,11 +61,6 @@ enum CardValue: String {
     }
 }
 
-enum IntValue: Int {
-    case Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King
-    func
-}
-
 class Card {
     internal let image: String
     internal let value: String
